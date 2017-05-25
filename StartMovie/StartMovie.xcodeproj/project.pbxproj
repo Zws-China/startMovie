@@ -11,13 +11,17 @@
 		8815B8581DAF1BF700132720 /* 111.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8815B8571DAF1BF700132720 /* 111.gif */; };
 		882D3A5E1D73D6CE00BEED93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 882D3A5D1D73D6CE00BEED93 /* main.m */; };
 		882D3A611D73D6CE00BEED93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882D3A601D73D6CE00BEED93 /* AppDelegate.m */; };
-		882D3A641D73D6CE00BEED93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882D3A631D73D6CE00BEED93 /* ViewController.m */; };
 		882D3A671D73D6CE00BEED93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882D3A651D73D6CE00BEED93 /* Main.storyboard */; };
 		882D3A691D73D6CE00BEED93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882D3A681D73D6CE00BEED93 /* Assets.xcassets */; };
 		882D3A6C1D73D6CE00BEED93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882D3A6A1D73D6CE00BEED93 /* LaunchScreen.storyboard */; };
 		882D3A771D73D6CE00BEED93 /* StartMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882D3A761D73D6CE00BEED93 /* StartMovieTests.m */; };
 		882D3A821D73D6CE00BEED93 /* StartMovieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882D3A811D73D6CE00BEED93 /* StartMovieUITests.m */; };
 		882D3A911D73D72500BEED93 /* WSMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882D3A901D73D72500BEED93 /* WSMovieController.m */; };
+		88CC7E761ED6819B00B6BE4F /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC7E751ED6819B00B6BE4F /* RootTabBarController.m */; };
+		88CC7E7C1ED681F500B6BE4F /* RootNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC7E7B1ED681F500B6BE4F /* RootNavController.m */; };
+		88CC7E831ED6821500B6BE4F /* View111Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC7E7E1ED6821500B6BE4F /* View111Controller.m */; };
+		88CC7E841ED6821500B6BE4F /* View222Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC7E801ED6821500B6BE4F /* View222Controller.m */; };
+		88CC7E851ED6821500B6BE4F /* View333Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC7E821ED6821500B6BE4F /* View333Controller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +48,6 @@
 		882D3A5D1D73D6CE00BEED93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		882D3A5F1D73D6CE00BEED93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		882D3A601D73D6CE00BEED93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		882D3A621D73D6CE00BEED93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		882D3A631D73D6CE00BEED93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		882D3A661D73D6CE00BEED93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		882D3A681D73D6CE00BEED93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882D3A6B1D73D6CE00BEED93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,16 @@
 		882D3A831D73D6CE00BEED93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		882D3A8F1D73D72500BEED93 /* WSMovieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMovieController.h; sourceTree = "<group>"; };
 		882D3A901D73D72500BEED93 /* WSMovieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMovieController.m; sourceTree = "<group>"; };
+		88CC7E741ED6819B00B6BE4F /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		88CC7E751ED6819B00B6BE4F /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		88CC7E7A1ED681F400B6BE4F /* RootNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavController.h; sourceTree = "<group>"; };
+		88CC7E7B1ED681F500B6BE4F /* RootNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavController.m; sourceTree = "<group>"; };
+		88CC7E7D1ED6821500B6BE4F /* View111Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View111Controller.h; sourceTree = "<group>"; };
+		88CC7E7E1ED6821500B6BE4F /* View111Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View111Controller.m; sourceTree = "<group>"; };
+		88CC7E7F1ED6821500B6BE4F /* View222Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View222Controller.h; sourceTree = "<group>"; };
+		88CC7E801ED6821500B6BE4F /* View222Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View222Controller.m; sourceTree = "<group>"; };
+		88CC7E811ED6821500B6BE4F /* View333Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View333Controller.h; sourceTree = "<group>"; };
+		88CC7E821ED6821500B6BE4F /* View333Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View333Controller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +125,7 @@
 				882D3A8F1D73D72500BEED93 /* WSMovieController.h */,
 				882D3A901D73D72500BEED93 /* WSMovieController.m */,
 				8815B8551DAF18ED00132720 /* qidong.mp4 */,
-				882D3A621D73D6CE00BEED93 /* ViewController.h */,
-				882D3A631D73D6CE00BEED93 /* ViewController.m */,
+				88CC7E731ED6808200B6BE4F /* main */,
 				8815B8571DAF1BF700132720 /* 111.gif */,
 				882D3A651D73D6CE00BEED93 /* Main.storyboard */,
 				882D3A681D73D6CE00BEED93 /* Assets.xcassets */,
@@ -149,6 +160,23 @@
 				882D3A831D73D6CE00BEED93 /* Info.plist */,
 			);
 			path = StartMovieUITests;
+			sourceTree = "<group>";
+		};
+		88CC7E731ED6808200B6BE4F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				88CC7E741ED6819B00B6BE4F /* RootTabBarController.h */,
+				88CC7E751ED6819B00B6BE4F /* RootTabBarController.m */,
+				88CC7E7A1ED681F400B6BE4F /* RootNavController.h */,
+				88CC7E7B1ED681F500B6BE4F /* RootNavController.m */,
+				88CC7E7D1ED6821500B6BE4F /* View111Controller.h */,
+				88CC7E7E1ED6821500B6BE4F /* View111Controller.m */,
+				88CC7E7F1ED6821500B6BE4F /* View222Controller.h */,
+				88CC7E801ED6821500B6BE4F /* View222Controller.m */,
+				88CC7E811ED6821500B6BE4F /* View333Controller.h */,
+				88CC7E821ED6821500B6BE4F /* View333Controller.m */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88CC7E831ED6821500B6BE4F /* View111Controller.m in Sources */,
 				882D3A911D73D72500BEED93 /* WSMovieController.m in Sources */,
-				882D3A641D73D6CE00BEED93 /* ViewController.m in Sources */,
+				88CC7E761ED6819B00B6BE4F /* RootTabBarController.m in Sources */,
+				88CC7E841ED6821500B6BE4F /* View222Controller.m in Sources */,
+				88CC7E851ED6821500B6BE4F /* View333Controller.m in Sources */,
+				88CC7E7C1ED681F500B6BE4F /* RootNavController.m in Sources */,
 				882D3A611D73D6CE00BEED93 /* AppDelegate.m in Sources */,
 				882D3A5E1D73D6CE00BEED93 /* main.m in Sources */,
 			);

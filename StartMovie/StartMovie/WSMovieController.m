@@ -11,6 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVKit/AVKit.h>
 
+#import "RootTabBarController.h"
 @interface WSMovieController ()
 @property (strong, nonatomic) MPMoviePlayerController *player;
 
@@ -29,20 +30,19 @@
 
 - (void)SetupVideoPlayer
 {
-//    NSString *myFilePath = [[NSBundle mainBundle]pathForResource:@"qidong"ofType:@"mp4"];
-//    NSURL *movieURL = [NSURL fileURLWithPath:myFilePath];
     self.player = [[MPMoviePlayerController alloc] initWithContentURL:_movieURL];
     [self.view addSubview:self.player.view];
     self.player.shouldAutoplay = YES;
     [self.player setControlStyle:MPMovieControlStyleNone];
     self.player.repeatMode = MPMovieRepeatModeOne;
-    [self.player.view setFrame:self.view.bounds];
+    [self.player.view setFrame:[UIScreen mainScreen].bounds];
     self.player.view.alpha = 0;
     [UIView animateWithDuration:3 animations:^{
         self.player.view.alpha = 1;
         [self.player prepareToPlay];
     }];
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackStateChanged) name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
+
     [self setupLoginView];
 }
 
@@ -65,30 +65,20 @@
     }];
 }
 
-
-- (void)enterMainAction:(UIButton *)btn {
-    NSLog(@"进入应用");
-    
+#pragma mark - NSNotificationCenter
+- (void)playbackStateChanged
+{
+    MPMoviePlaybackState playbackState = [self.player playbackState];
+    if (playbackState == MPMoviePlaybackStateStopped || playbackState == MPMoviePlaybackStatePaused) {
+        [self.player play];
+    }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)enterMainAction:(UIButton *)btn {
+    NSLog(@"进入应用");
+    RootTabBarController *rootTabCtrl = [[RootTabBarController alloc]init];
+    self.view.window.rootViewController = rootTabCtrl;
 }
 
 
