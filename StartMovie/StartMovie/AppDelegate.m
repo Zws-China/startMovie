@@ -29,6 +29,7 @@
         self.window.rootViewController = wsCtrl;
         
         //设置上下面这句话，将当前版本缓存到本地，下次对比一样，就不走启动视屏了。
+        //也可以将这句话放在WSMovieController.m的进入应用方法里面
         //为了让每次都可以看到启动视屏，这句话先注释掉
         //[[NSUserDefaults standardUserDefaults] setObject:version forKey:@"VersionCache"];
 
