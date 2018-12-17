@@ -1,5 +1,5 @@
 # startMovie
-APP启动视屏  APP第一次启动播放视屏欢迎
+APP启动视频  APP第一次启动播放视频欢迎
 
 # PhotoShoot
 ![image](https://github.com/Zws-China/startMovie/blob/master/StartMovie/StartMovie/111.gif)
@@ -18,7 +18,7 @@ NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBun
 if (![versionCache isEqualToString:version]) //如果本地缓存的版本号和当前应用版本号不一样，则是第一次启动（更新版本也算第一次启动）
 {
     WSMovieController *wsCtrl = [[WSMovieController alloc]init];
-    wsCtrl.movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"qidong"ofType:@"mp4"]];//选择本地的视屏
+    wsCtrl.movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"qidong"ofType:@"mp4"]];//选择本地的视频
     self.window.rootViewController = wsCtrl;
 
     //设置上下面这句话，将当前版本缓存到本地，下次对比一样，就不走启动视屏了。
